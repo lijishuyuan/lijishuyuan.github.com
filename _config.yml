@@ -8,8 +8,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 李技术员-ruby on rails
-tagline: ror linux javascript database
+title : 李技术员
+tagline: linux javascript database ruby on rails
 author :
   name : 李技术员
   email : liyi94zhuai@gmail.com
