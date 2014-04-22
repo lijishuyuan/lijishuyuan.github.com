@@ -1,3 +1,4 @@
+#encoding: utf-8 
 require "rubygems"
 require 'rake'
 require 'yaml'
@@ -39,7 +40,9 @@ module JB
   
   end #Path
 end #JB
-
+task :default do
+  puts "Hello World!"
+end
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 # desc "Begin a new post in #{CONFIG['posts']}"
 # task :post do
@@ -73,7 +76,6 @@ end #JB
 #   end
 # end # task :post
 
-
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
@@ -82,7 +84,7 @@ task :post do
   category = ENV["category"] || "default"
   description = ENV["description"] || ""
   tags = ENV["tags"] || "[]"
-  ＃ 新增用来将汉字转换成拼音，因为url好像不支持中文。当然在文件顶部require了Hz2py
+  # 新增用来将汉字转换成拼音，因为url好像不支持中文。当然在文件顶部require了Hz2py
   slug = Hz2py.do(title, :join_with => '-', :to_simplified => true)
   slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
