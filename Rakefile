@@ -1,8 +1,9 @@
-#encoding: utf-8 
+# encoding: utf-8
 require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
+require 'hz2py'
 
 SOURCE = "."
 CONFIG = {
@@ -40,9 +41,9 @@ module JB
   
   end #Path
 end #JB
-task :default do
-  puts "Hello World!"
-end
+# task :default do
+#   puts "Hello World!"
+# end
 # Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
 # desc "Begin a new post in #{CONFIG['posts']}"
 # task :post do
