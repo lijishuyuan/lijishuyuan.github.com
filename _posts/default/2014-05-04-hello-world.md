@@ -12,4 +12,3 @@ http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html
 
 官方说三分钟完事，我折腾两小时，这水平继续提高啊
 
-Included file 'JB/setup' not found in _includes directory
