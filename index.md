@@ -3,7 +3,6 @@ layout: page
 title: 李技术员的只言片语!
 tagline: 团结、紧张、严肃、活泼
 ---
-<h2>{{ page.title }}</h2>
 <p>最新文章</p>
 <ul class="posts">
   {% for post in site.posts %}
