@@ -3,8 +3,8 @@ layout: post
 title: "Jekyll Bootstrap博客框架搭建总结"
 ---
 
-jekyll的中文标题转换拼音解决方案 
-http://blog.turbidsoul.me/2013/05/23/jekyll-de-zhong-wen-biao-ti-zhuan-huan-pin-yin-jie-jue-fang-an/
+jekyll的中文标题转换拼音解决方案   
+http://blog.turbidsoul.me/2013/05/23/jekyll-de-zhong-wen-biao-ti-zhuan-huan-pin-yin-jie-jue-fang-an/  
 这个方法在windows试了几次没成功，想想也没必要，rake 英文即可，生成的文件改变post里边的title即可。
 
 阮一峰的这篇blog，让我受益匪浅
