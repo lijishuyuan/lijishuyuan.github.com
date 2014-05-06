@@ -8,7 +8,9 @@ http://blog.turbidsoul.me/2013/05/23/jekyll-de-zhong-wen-biao-ti-zhuan-huan-pin-
 这个方法在windows试了几次没成功，想想也没必要，rake 英文即可，生成的文件改变post里边的title即可。
 
 
-经过不懈努力终于可以在win7下rake 中文了，除了上边说的在rakefile修改
+经过不懈努力终于可以在win7下rake 中文了，除了上边说的在rakefile修改  
+
+
 	# encoding: utf-8
 	require "rubygems"
 	require 'rake'
@@ -49,11 +51,13 @@ http://blog.turbidsoul.me/2013/05/23/jekyll-de-zhong-wen-biao-ti-zhuan-huan-pin-
 	  end
 	end # task :post
 
-然后修改D:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-1.5.1\lib\jekyll\converted.rb中36行修改为
+然后修改D:\Ruby193\lib\ruby\gems\1.9.1\gems\jekyll-1.5.1\lib\jekyll\converted.rb中36行修改为  
+
 	def read_yaml(base, name, opts = {:encoding => "utf-8"})
 
 还有_config.yml第一行加# encoding: utf-8   
-另外D:\Ruby193\lib\ruby\gems\1.9.1\gems\hz2py-1.0.0\lib\elvuel\traditional_and_simplified.rb加两行为
+另外D:\Ruby193\lib\ruby\gems\1.9.1\gems\hz2py-1.0.0\lib\elvuel\traditional_and_simplified.rb加两行为  
+
 	      def conv_t2s(str)
 	      	str=str.encode("UTF-8")
 	        str.gsub(/#{@@t2s_hash.keys.join("|")}/){ |c| @@t2s_hash[c] }
