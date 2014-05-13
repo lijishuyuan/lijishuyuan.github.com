@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 亦玩亦工作，团结、紧张、严肃、活泼
-tagline: 团结、紧张、严肃、活泼
+title: 团结、紧张、严肃、活泼
+tagline: 复杂问题简单化，为大乘。
 ---
 <p>最新文章</p>
 <ul class="posts">
